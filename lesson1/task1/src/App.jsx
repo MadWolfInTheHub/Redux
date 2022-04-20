@@ -19,10 +19,10 @@ class App extends Component{
   render() {
     return (
       <div>
-      <ThemeContext.Provider value={this.state.theme}>
-          <ThemedButton onClick={this.togleTheme}>Dynamic Theme</ThemedButton>
-      </ThemeContext.Provider>
-      <ThemedButton onClick={this.togleTheme}>Default Theme</ThemedButton>
+        <ThemeContext.Provider value={this.state.theme}>
+            <ThemedButton onClick={this.togleTheme}>Dynamic Theme</ThemedButton>
+        </ThemeContext.Provider>
+        <ThemedButton onClick={this.togleTheme}>Default Theme</ThemedButton>
       </div>
     );
   }
