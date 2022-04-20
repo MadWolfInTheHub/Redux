@@ -3,9 +3,8 @@ import { UserContext } from './context';
 
 class UserMenu extends Component {
   render() {
-    console.log(this.context);
     return (
-      <div class="menu">
+      <div className="menu">
         <div className='menu__greeting'>
           <span>Hello, {this.context.name}</span>
           <img
