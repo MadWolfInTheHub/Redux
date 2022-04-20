@@ -27,5 +27,6 @@ store.subscribe(() => {
   const state = store.getState()
   const currentValue = state.value
   const historyString = state.history.join(' '); 
-  resultElem.textContent = `${historyString} = ${currentValue}`;
+  resultElem.textContent = state.history.length === 0
+  ? '' : `${historyString} = ${currentValue}`;
 });
