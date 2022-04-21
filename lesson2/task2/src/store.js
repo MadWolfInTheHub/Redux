@@ -24,7 +24,7 @@ export const reset = () => {
 
 const initialState = {
   value: 0,
-  history: [],
+  history: '',
 };
 
 const counterReducer = (state = initialState, action) => {
@@ -40,7 +40,7 @@ const counterReducer = (state = initialState, action) => {
       return {
         ...state,
         value: state.value - 1,
-        history: state.history.concat(-1)
+        history: state.history.concat('-1')
       };
       
     case RESET:
