@@ -1,4 +1,4 @@
-import store from './users.reducer';
+import store from './store';
 import { addUser, deleteUser } from './users.actions'
 
 console.log(store.dispatch(addUser({id: 23, name: 'Tom'})))

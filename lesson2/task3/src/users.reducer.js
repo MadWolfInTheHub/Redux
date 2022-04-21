@@ -1,4 +1,3 @@
-import { createStore } from 'redux';
 const initialState = {
   usersList: []
 };
@@ -22,7 +21,3 @@ export const userReducer = (state = initialState, action) => {
       return state;
   };
 };
-
-const store = createStore(userReducer)
-
-export default store;
