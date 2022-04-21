@@ -25,9 +25,7 @@ resetBtn.addEventListener('click', onReset);
 store.subscribe(() => {
   const state = store.getState()
   const currentValue = state.history.reduce((acc, value) => acc + Number(value) , 0)
-  const historyString = state.history.join(' '); 
-  const historyToString = state.history.join(' '); 
-  console.log(historyToString)
+  const historyString = state.history.join(''); 
   resultElem.textContent = state.history.length === 0
   ? '' : `${historyString} = ${currentValue}`;
 });
