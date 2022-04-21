@@ -1,9 +1,6 @@
 import { createStore } from 'redux';
 const initialState = {
-  userList: [{
-    id: 76,
-    name: 'Sarah',
-  },]
+  userList: []
 };
 
 export const userReducer = (state = initialState, action) => {
