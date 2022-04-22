@@ -9,7 +9,7 @@ class Users extends Component {
       id,
       name: `User # ${id}`
     }
-    this.props.createUser(newUser)
+    this.props.addUser(newUser)
   }
   render() {
     const { users, deleteUser } = this.props;
@@ -42,7 +42,7 @@ const mapState = state => {
 };
 
 const mapDispatch ={
-  createUser: userActions.addUser,
+  addUser: userActions.addUser,
   deleteUser: userActions.deleteUser,
 }
 
