@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import store from '../store';
 import { connect } from 'react-redux';
-import * as userActions from '../users/users.actions'
+import * as userActions from './users.actions'
 
 class Users extends Component {
   onUserCreate = () => {
