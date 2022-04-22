@@ -14,7 +14,6 @@ class Users extends Component {
     this.props.addUser(newUser)
   }
   render() {
-    console.log(store.getState())
     const { users, deleteUser } = this.props;
     return (
       <div className='users'>

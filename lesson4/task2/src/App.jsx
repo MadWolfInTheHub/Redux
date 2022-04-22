@@ -4,7 +4,6 @@ import Users from './users/Users';
 import store from "./store";
 
 const App = () => {
-  console.log(store.getState())
   return (
     <Provider store={store}>
       <Users />
