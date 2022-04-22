@@ -10,7 +10,7 @@ export const addProduct = product => {
   };
 };
 
-export const removeProdacut = productId => {
+export const removeProdact = productId => {
   return {
     type: REMOVE_PRODUCT,
     payload: {
