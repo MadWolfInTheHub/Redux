@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import store from '../store';
+
 import * as userActions from './users.actions'
 
 class Users extends Component {
@@ -12,13 +14,14 @@ class Users extends Component {
     this.props.addUser(newUser)
   }
   render() {
+    console.log(store.getState())
     const { users, deleteUser } = this.props;
     return (
       <div className='users'>
         <button 
           onClick={this.onUserCreate}
           className='users__create-btn'>
-          Create User
+          Create user
         </button>
         <ul className='users__list'>
           {users.map(user => (
