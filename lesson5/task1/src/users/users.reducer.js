@@ -1,7 +1,9 @@
 import { ADD_USER, DELETE_USER,  } from "./users.actions";
+import { users } from "./users";
+
 
 const initialState = {
-  usersList: []
+  usersList: users
 }
 
 const usersReducer = (state = initialState, action) => {
