@@ -1,9 +1,8 @@
 import { createStore, combineReducers } from 'redux';
-import usersReducer from './users/users.reducer';
-
+import optionsReducer from './options/options.reducer';
 
 const reducer = combineReducers({
-  users: usersReducer
+  options: optionsReducer,
 })
 
 const store = createStore(
