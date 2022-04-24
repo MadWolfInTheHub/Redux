@@ -11,7 +11,7 @@ export const wetherRecived = (weatherData) => {
   };
 };
 
-export const fetchWeather = () => {
+export const getWeatherData = () => {
   return function(dispatch) {
     getCitiesData()
     .then(data => {

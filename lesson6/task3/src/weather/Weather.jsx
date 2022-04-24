@@ -34,7 +34,7 @@ const mapState = state => {
 }
 
 const mapDispatch = {
-  getWeatherData: usersActions.fetchWeather,
+  getWeatherData: usersActions.getWeatherData,
 
 };
 
