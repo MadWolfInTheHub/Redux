@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from 'react-redux';
 import store from "./store";
-import Weather from "./wheather/Weather";
+import Weather from "./weather/Weather";
 
 const App = () => {
   return (
