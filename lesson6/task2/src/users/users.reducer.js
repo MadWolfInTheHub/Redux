@@ -8,14 +8,12 @@ const initialData = {
 const usersReducer = (state = initialData, action) => {
   switch (action.type) {
     case SHOW_SPINNER: {
-      console.log(state.isFetching)
       return {
         ...state,
         isFetching: true,
       }
     }
     case USER_DATA_RECIEVED: {
-      console.log(state.isFetching)
       return {
         ...state,
         userData: action.payload.userData,
