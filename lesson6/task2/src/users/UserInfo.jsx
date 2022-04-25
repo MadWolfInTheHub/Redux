@@ -37,7 +37,6 @@ UserInfo.defaultValue = {
 }
 
 const mapState = state => {
-  console.log(isFetchingSelector(state))
   return {
     isFetching: isFetchingSelector(state),
     userData: userDataselector(state),

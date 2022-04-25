@@ -2,7 +2,6 @@ import React , { Component } from 'react';
 import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as usersActions from './users.actions';
-import { getUserData } from './users.gateway';
 
 class SearchField extends Component {
   state = {
