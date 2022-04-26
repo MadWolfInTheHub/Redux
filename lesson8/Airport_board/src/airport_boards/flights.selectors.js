@@ -1,0 +1,1 @@
+export const fligthsListSelector = state => state.flights.flightsList.body;
