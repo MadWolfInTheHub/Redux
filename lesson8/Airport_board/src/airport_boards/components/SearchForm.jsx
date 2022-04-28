@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchForm = ({ flightsDateToCheck, handleIsDeparture, handleChange, onSubmit, searchInfo, flightToSearch, isDeparture, date }) => {
+const SearchForm = ({ flightsDateToCheck, handleIsDeparture, handleChange, onSubmit, searchInfo, value, isDeparture, date }) => {
   return (
     <div className='flights'>
     <form 
@@ -20,7 +20,7 @@ const SearchForm = ({ flightsDateToCheck, handleIsDeparture, handleChange, onSub
         <input 
           className='flights__search-form_input'
           placeholder='Airline, destination or flight #'
-          value={searchInfo}
+          value={value}
           onChange={handleChange}
         >
         </input>

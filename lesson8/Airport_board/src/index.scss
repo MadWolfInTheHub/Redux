@@ -48,7 +48,7 @@ body {
           height: 80px;
           width: 100%;
           padding-left: 70px;
-          font-size: 26px;
+          font-size: 30px;
           border: none;
         }
 
@@ -132,6 +132,8 @@ body {
 
 .fa-search {
   position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
   z-index: 2;
   font-size: 50px;
   color: #B8B9B9;

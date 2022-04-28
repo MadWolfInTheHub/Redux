@@ -4,8 +4,10 @@ import SearchForm from './SearchForm';
 
 class SearchFlight extends Component{
   state = {
+    value: '',
     isDeparture: true,
   };
+
 
   handleIsDeparture = () => {
     this.setState({
@@ -14,7 +16,9 @@ class SearchFlight extends Component{
   };
 
   handleChange = (event) => {
-    this.props.flightToSearch(event.target.value)
+    this.setState({
+      value: event.target.value
+    });
   };
 
   handleFlightsDateToCheck = (event) => {
@@ -23,9 +27,15 @@ class SearchFlight extends Component{
 
   onSubmit = event => {
     event.preventDefault();
+    this.props.flightToSearch(this.state.value) 
+
   };
   
   render() {
+    if (this.state.value === '') {
+      this.props.flightToSearch(this.state.value) 
+    };
+    
     const { flightsList, date, searchInfo, flightToSearch } = this.props
     return (
       <>
@@ -36,7 +46,7 @@ class SearchFlight extends Component{
           isDeparture={this.state.isDeparture}
           date={date}
           flightsDateToCheck={this.handleFlightsDateToCheck}
-          searchInfo={searchInfo}
+          value={this.state.value}
           flightToSearch={flightToSearch}
         />
         {
